@@ -1,0 +1,22 @@
+/* תפריט צף */
+#ma-widget-container { position: fixed; bottom: 20px; left: 20px; z-index: 999999; direction: rtl; }
+#ma-trigger-btn { width: 60px; height: 60px; border-radius: 50%; background: #004a99; color: white; border: none; font-size: 30px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: transform 0.2s; }
+#ma-trigger-btn:hover { transform: scale(1.1); }
+
+#ma-accessibility-menu { display: none; width: 280px; background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 1px solid #eee; margin-bottom: 15px; }
+#ma-accessibility-menu.active { display: block; }
+#ma-accessibility-menu h3 { margin-top: 0; font-size: 18px; text-align: center; color: #333; border-bottom: 2px solid #004a99; padding-bottom: 10px; }
+
+.ma-button-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.ma-button-grid button { padding: 10px 5px; border: 1px solid #ddd; background: #fdffdf; cursor: pointer; border-radius: 5px; font-size: 13px; font-weight: bold; }
+.ma-button-grid button:hover { background: #004a99; color: white; }
+#ma-reset-btn { grid-column: span 2; background: #ff4d4d; color: white; border: none; }
+
+/* הגדרות נגישות גלובליות */
+body.ma-big-text { font-size: 1.25em !important; }
+body.ma-readable-font { font-family: Arial, sans-serif !important; }
+body.ma-grayscale { filter: grayscale(100%); }
+body.ma-high-contrast { background: #000 !important; color: #fff !important; }
+body.ma-high-contrast *:not(button) { background: #000 !important; color: #fff !important; }
+body.ma-underline a { text-decoration: underline !important; text-decoration-color: yellow !important; }
+body.ma-stop-animations * { animation: none !important; transition: none !important; }
